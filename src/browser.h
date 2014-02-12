@@ -10,6 +10,8 @@ namespace Ui {
 class Browser;
 }
 
+class NetworkInterface;
+
 class Browser : public QMainWindow
 {
     Q_OBJECT
@@ -27,6 +29,7 @@ private slots:
 private:
     Ui::Browser *ui;
     QWebView *view;
+    NetworkInterface *n;
 };
 
 #endif // BROWSER_H

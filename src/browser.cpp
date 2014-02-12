@@ -52,7 +52,7 @@ Browser::Browser(QWidget *parent) :
     connect(view,SIGNAL(urlChanged(const QUrl)), this, SLOT(urlChanged (const QUrl)));
 
     // Network Interface
-    NetworkInterface(this);
+    n = new NetworkInterface(this);
 
 }
 
